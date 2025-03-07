@@ -1,7 +1,7 @@
 
 
 
-<div class="navbar bg-base-100 shadow-sm">
+<div class="navbar w-full bg-base-100 ml-0 shadow-sm">
     <div class="flex-none">
         <a href="/" class="btn btn-square btn-ghost">
             <img src={{$logo}} alt={{$logoAlt}}>       

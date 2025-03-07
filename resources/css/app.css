@@ -16,6 +16,11 @@
         "Noto Color Emoji";
 }
 
+.root {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .my-slide-in {
     animation: sliding 10s linear infinite;
     position: absolute;
@@ -32,5 +37,15 @@
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+.card {
+    &.image-full {
+        > figure img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
