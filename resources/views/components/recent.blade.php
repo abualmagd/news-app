@@ -5,7 +5,7 @@
     <div class="flex w-full md:flex-row justify-center flex-wrap flex-col gap-2">
         @foreach ($articles as $article)
         <div class="md:w-60 px-5 md:px-0">
-            <x-recent-card  article="article"/>
+            <x-recent-card  :article="$article"/>
         </div>
           
         @endforeach

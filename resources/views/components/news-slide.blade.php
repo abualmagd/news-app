@@ -3,8 +3,8 @@
         
     <div class="flex gap-2">
        @foreach ($items as $item )
-            <p class="  w-52 mx-3 text-center hover:cursor-pointer">
-                {{$item}}
+            <p class="  w-52 mx-3 overflow-hidden text-center hover:cursor-pointer">
+                {{$item['title']}}
             </p>
         @endforeach
         </div>

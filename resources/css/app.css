@@ -22,7 +22,7 @@
 }
 
 .my-slide-in {
-    animation: sliding 10s linear infinite;
+    animation: sliding 40s linear infinite;
     position: absolute;
     white-space: nowrap;
 }

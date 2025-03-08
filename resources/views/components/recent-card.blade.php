@@ -1,11 +1,12 @@
 <a href="/id" class="flex flex-col w-full">
-    <figure>
-        <img   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="img alt">
+    <figure class=" h-52 w-full bg-gray-400">
+        <img   src="{{ $article['image_url'] }}"
+        class=" object-cover h-full w-full"
+        alt="{{ $article['source_name'] }}">
     </figure>
     <p class=" line-clamp-3">
-        اللّغة العربيّة من اللّغات العالميّة الأكثر انتشاراً في العالم، وتعتبرُ من إحدى اللّغات المُعتمدة في الأمم المُتّحدة، كما إنها تشكّلُ اللّغة الأولى في مناطق بلاد الشّام، وشبه الجزيرة العربيّة، وشمال أفريقيا، وساهم هذا الانتشار الواسعُ للّغة العربيّة في تصنيفها كواحدةٍ من اللّغاتِ التي يسعى العديدُ من الطُلّاب إلى دراستها، وخصوصاً غير الناطقيّن بها؛..
+        {{ $article['description'] }}
     </p>
-    <p class=" text-base-content/50 text-sm mt-1">مارس 1,2025 10:46 </p>     
+    <p class=" text-base-content/50 text-sm mt-1"> {{ $article['pubDate'] }} </p>     
 
 </a>
