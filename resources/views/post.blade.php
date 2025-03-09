@@ -1,7 +1,6 @@
-<!-- resources/views/main.blade.php -->
+<!-- resources/views/post.blade.php -->
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-    
+<html lang="ar" dir="rtl">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +8,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="root">
-
-    @if($articles)
+    @if($post)
     <x-my-header  title="أخبار الساعة" logo="{{ asset('images/logo.svg') }}" logoAlt="alt logo "/>
-    <x-news-slide   :items="$articles" />
-    <x-hero  :articles="$articles"/>
-    <x-recent :articles="$articles" />
+    <x-post-body  :post="$post" />
+
+
     <x-footer />
     @else
     <x-my-header  title="أخبار الساعة" logo="{{ asset('images/logo.svg') }}" logoAlt="alt logo "/>

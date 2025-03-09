@@ -1,4 +1,4 @@
-<a href="/id" class='w-full'>
+<a href="/post/{{ $article['article_id'] }}" class='w-full'>
    <div class="card  cursor-pointer bg-base-100 image-full w-full h-full shadow-sm">
     <figure>
       <img
