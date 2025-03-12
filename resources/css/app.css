@@ -27,6 +27,11 @@
     white-space: nowrap;
 }
 
+.my-slide-out {
+    animation: sliding-out 40s linear infinite;
+    position: absolute;
+    white-space: nowrap;
+}
 .wrapper:hover .my-slide-in {
     animation: none;
 }
@@ -37,6 +42,15 @@
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@keyframes sliding-out {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
     }
 }
 
